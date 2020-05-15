@@ -1,0 +1,18 @@
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
+exclude:
+  - scripts
+
+collections:
+  documents:
+    output: true
+    sort_by: lesson
+
+defaults:
+  - scope:
+      path: "_documents"
+    values:
+      layout: "default"

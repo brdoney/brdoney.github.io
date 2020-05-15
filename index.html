@@ -1,0 +1,8 @@
+---
+layout: default
+---
+
+<h1>Documents:</h1>
+{% for doc in site.documents %}
+<p><a href="{{ doc.url }}">{{ doc.title }}</a></p>
+{% endfor %}
