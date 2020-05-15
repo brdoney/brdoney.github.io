@@ -1,9 +1,8 @@
 ---
-title: Conditionals
-lesson: 5
+title: If Statements
+order: 5
+type: lesson
 ---
-
-# If Statements
 
 Sometimes we want the computer to be able to make decisions on its own. Maybe we want it to...
 

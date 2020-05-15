@@ -1,9 +1,8 @@
 ---
 title: User Input
-lesson: 4
+order: 4
+type: lesson
 ---
-
-# User Input
 
 Scanners can be used to get input from the user, so we can do things like...
 

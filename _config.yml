@@ -9,10 +9,10 @@ exclude:
 collections:
   documents:
     output: true
-    sort_by: lesson
+    sort_by: order
 
 defaults:
   - scope:
       path: "_documents"
     values:
-      layout: "default"
+      layout: "document"

@@ -1,9 +1,8 @@
 ---
 title: Manipulating Variables
-lesson: 3
+order: 3
+type: lesson
 ---
-
-# Manipulating Variables
 
 In Java, there are a couple of ways we can change variables after we have created them. In the following table, the variable declared below is used.
 

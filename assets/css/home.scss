@@ -1,0 +1,49 @@
+---
+---
+@import "timeline";
+
+#timeline {
+  &:before {
+    content: "";
+    width: 3px;
+    background: $timeline-color;
+
+    {% assign docs_size = site.documents.size | times: 1.0 %}
+    height: percentage({{ docs_size | minus: 1.0 | divided_by: docs_size }});
+
+    left: 50%;
+    top: 0;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #timeline {
+    margin: 30px;
+    padding: 0px;
+    width: 90%;
+    &:before {
+      left: 0;
+    }
+
+    .timeline-item {
+      // :nth-child(even) included for specificity
+      .timeline-content, &:nth-child(even) .timeline-content {
+        width: 90%;
+        float: right;
+
+        &:before,
+        &.right:before {
+          left: 10%;
+          margin-left: -6px;
+          border-left: 0;
+          border-right: 7px solid $timeline-color;
+        }
+      }
+
+      .timeline-icon {
+        left: 0;
+      }
+    }
+  }
+}

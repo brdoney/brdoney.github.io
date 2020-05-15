@@ -1,9 +1,8 @@
 ---
 title: First Program
-lesson: 1
+order: 1
+type: lesson
 ---
-
-# First Program
 
 ```java
 package com.company;

@@ -1,9 +1,8 @@
 ---
-title: Random
-lesson: 6
+title: Random Numbers
+order: 6
+type: lesson
 ---
-
-# Random Numbers
 
 Random numbers are super useful when making games, writing security systems, and when doing calculations. In Java, they can be generated using _Random_.
 

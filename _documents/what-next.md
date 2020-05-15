@@ -1,9 +1,8 @@
 ---
 title: Next Steps
-lesson: 8
+order: 8
+type: lesson
 ---
-
-# Resources
 
 Now that you've been introduced, check out the following websites to kickstart your journey even further into Java! These websites are all free and the higher they are ranked, the better we think they are.
 

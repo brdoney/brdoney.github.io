@@ -1,9 +1,8 @@
 ---
 title: Variables
-lesson: 2
+order: 2
+type: lesson
 ---
-
-# Variables
 
 | Type    | Real World | Example                          |
 | ------- | ---------- | -------------------------------- |

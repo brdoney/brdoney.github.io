@@ -1,9 +1,8 @@
 ---
 title: While Loops
-lesson: 7
+order: 7
+type: lesson
 ---
-
-# While Loops
 
 A lot of the time, we also want the computer to do the same actions over and over again. Maybe we're
 
