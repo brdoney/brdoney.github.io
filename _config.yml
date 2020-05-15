@@ -7,12 +7,12 @@ exclude:
   - scripts
 
 collections:
-  documents:
+  docs:
     output: true
     sort_by: order
 
 defaults:
   - scope:
-      path: "_documents"
+      path: "_docs"
     values:
       layout: "document"

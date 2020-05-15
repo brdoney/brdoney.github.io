@@ -1,0 +1,34 @@
+{%- if page.collection -%}
+<!-- Assumes that the posts are already ordered by Jekyll -->
+{%- assign posts = site[page.collection] -%}
+
+{%- for item in posts -%}
+{%- if item.title == page.title -%}
+{%- assign current_position = forloop.index0 -%}
+{%- break -%}
+{%- endif -%}
+{%- endfor -%}
+
+{% if current_position %}
+<p>
+    {%- if 0 < current_position -%}
+    {%- assign prev_index = current_position | minus: 1 -%}
+    {%- endif -%}
+
+    {%- assign temp = current_position | plus: 1 -%}
+    {%- if temp < posts.size -%}
+    {%- assign next_index = temp -%}
+    {%- endif -%}
+
+    {% if prev_index %}
+    <a href="{{ posts[prev_index].url }}">Previous</a>
+    {%- endif -%}
+    {% if prev_index and next_index %}
+    <span> | </span>
+    {%- endif -%}
+    {% if next_index %}
+    <a href="{{ posts[next_index].url }}">Next</a>
+    {% endif %}
+</p>
+{%- endif -%}
+{%- endif -%}

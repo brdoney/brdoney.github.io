@@ -26,7 +26,7 @@ if (condition) {
 }
 ```
 
-There can be as many `else if` as we want and `else if` and `else` are both optional.
+There can be as many `else if` as we want, plus `else if` and `else` are both optional.
 
 We can create conditions using a couple of operators
 
