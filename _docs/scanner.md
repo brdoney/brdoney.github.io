@@ -4,13 +4,13 @@ order: 4
 type: lesson
 ---
 
-Scanners can be used to get input from the user, so we can do things like...
+Let's add some interactivity! Scanners can be used to get input from the user, so we can do things like...
 
 - Typing in word documents
 - Controlling games
 - Writing code
 
-and many others! In order to get keyboard input from users, we use _Scanners_.
+and many others! In order to get keyboard input from users, we use **Scanners**.
 
 In the following table, `varName` should be replaced with the name of your Scanner variable.
 

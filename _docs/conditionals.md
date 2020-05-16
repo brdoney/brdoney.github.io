@@ -32,13 +32,13 @@ We can create conditions using a couple of operators
 
 | Operator | Name                     |
 | -------- | ------------------------ |
-| <        | Less than                |
-| <=       | Less than or equal to    |
-| >        | Greater than             |
-| >=       | Greater than or equal to |
-| ==       | Equal to                 |
-| !=       | Not equal to             |
-| &&       | and                      |
+| `<`      | Less than                |
+| `<=`     | Less than or equal to    |
+| `>`      | Greater than             |
+| `>=`     | Greater than or equal to |
+| `==`     | Equal to                 |
+| `!=`     | Not equal to             |
+| `&&`     | and                      |
 | `||`     | or                       |
 
 For Strings, use `.equals()` instead of `==` and `!=`

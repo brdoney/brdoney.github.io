@@ -4,7 +4,7 @@ order: 6
 type: lesson
 ---
 
-Random numbers are super useful when making games, writing security systems, and when doing calculations. In Java, they can be generated using _Random_.
+Random numbers are super useful when making games, writing security systems, and when doing calculations. In Java, they can be generated using **Random**.
 
 Below, `varName` should be replaced with the name of your Random variable.
 

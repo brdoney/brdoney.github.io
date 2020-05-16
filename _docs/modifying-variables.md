@@ -4,7 +4,11 @@ order: 3
 type: lesson
 ---
 
-In Java, there are a couple of ways we can change variables after we have created them. In the following table, the variable declared below is used.
+Remembering things is great, but there's one important thing missing: changing what value the computer remembers.
+
+For example, what if we have a variable that tracks a friend's age but that friend gets a year older?!?
+
+Well, in Java, there are a couple of ways we can change variables after we have created them. In the following table, the variable declared below is used:
 
 ```java
 int myVar = 1;
@@ -19,9 +23,3 @@ int myVar = 1;
 | `--`   | `myVar--;`   | Subtract 1 from the current value of myVar |
 | `*=`   | `myVar*=4;`  | Multiply the current value of myVar by two |
 | `/=`   | `myVar/= 7;` | Divide the current value of myVar by 7     |
-
-We've created a ton of variables while working with Java, but we haven't talked much about how to change them. Changing a variable is important because it allows us to...
-
-- Do quick math with variables
-- Store values that change over time, like active users or health points in a game
-- Write powerful conditionals

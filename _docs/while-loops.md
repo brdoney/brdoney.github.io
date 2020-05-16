@@ -4,11 +4,11 @@ order: 7
 type: lesson
 ---
 
-A lot of the time, we also want the computer to do the same actions over and over again. Maybe we're
+A lot of the time, we also want the computer to do the same actions over and over again. Maybe we're...
 
 - Printing out a message for the user repeatedly
-- Repeat an error message until the user gives valid input
 - Playing a game over and over again
+- Repeat an error message until the user gives valid input
 
 To do this, we can use "while loops". While loops let us repeat the same code over and over if a condition is true. They use the following structure:
 
