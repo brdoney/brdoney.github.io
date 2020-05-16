@@ -21,13 +21,13 @@
     {%- endif -%}
 
     {% if prev_index %}
-    <a href="{{ posts[prev_index].url }}">Previous</a>
+    <a href="{{ posts[prev_index].url }}" class="btn">Previous</a>
     {%- endif -%}
     {% if prev_index and next_index %}
     <span> | </span>
     {%- endif -%}
     {% if next_index %}
-    <a href="{{ posts[next_index].url }}">Next</a>
+    <a href="{{ posts[next_index].url }}" class="btn">Next</a>
     {% endif %}
 </p>
 {%- endif -%}

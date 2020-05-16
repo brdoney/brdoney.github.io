@@ -1,4 +1,8 @@
-$timeline-color: #000;
+@import "_variables";
+
+.content {
+  max-width: 850px;
+}
 
 %clearfix {
   &:after,
@@ -42,7 +46,7 @@ $timeline-color: #000;
     @extend %clearfix;
 
     .timeline-icon {
-      background: $timeline-color;
+      background-color: $primary;
       width: 50px;
       height: 50px;
       position: absolute;
@@ -69,11 +73,16 @@ $timeline-color: #000;
 
       h2 {
         padding: 15px;
-        background: $timeline-color;
+        background: $primary;
         color: #fff;
         margin: -20px -20px 0 -20px;
         font-weight: 300;
         @include prefix(border-radius, 3px 3px 0 0);
+
+        &:after {
+          top: 0;
+          border-bottom: none;
+        }
       }
 
       &:before {
@@ -85,7 +94,7 @@ $timeline-color: #000;
         height: 0;
         border-top: 7px solid transparent;
         border-bottom: 7px solid transparent;
-        border-left: 7px solid $timeline-color;
+        border-left: 7px solid $primary;
       }
 
       &.right {
@@ -96,7 +105,7 @@ $timeline-color: #000;
           right: 45%;
           left: inherit;
           border-left: 0;
-          border-right: 7px solid $timeline-color;
+          border-right: 7px solid $primary;
         }
       }
     }
@@ -110,9 +119,13 @@ $timeline-color: #000;
           right: 45%;
           left: inherit;
           border-left: 0;
-          border-right: 7px solid $timeline-color;
+          border-right: 7px solid $primary;
         }
       }
     }
   }
+}
+
+.btn-container {
+  text-align: center;
 }

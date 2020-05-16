@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400;1,900&family=Roboto+Mono:wght@400;700&display=swap');
+@import "_variables";
+
+body {
+  background-color: $light;
+}
 
 .content {
   margin-bottom: 180px;
@@ -7,6 +12,34 @@
   padding-left: 30px;
   padding-right: 30px;
   max-width: 750px;
+}
+
+@mixin prefix($prop, $val) {
+	@each $prefix in '-webkit-', '-moz-', '-ms-', '' {
+		#{$prefix}#{$prop}: $val;
+	}
+}
+.btn {
+	padding: 5px 15px;
+	text-decoration: none;
+	background: transparent;
+	border: 2px solid lighten($dark, 10%);
+	color: lighten($dark, 10%);
+	display: inline-block;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 0.85em;
+	@include prefix(border-radius, 20px);
+	@include prefix(transition, background .3s ease);
+
+	&:hover {
+    background-color: lighten($dark, 10%);
+    color: $light;
+	}
+}
+
+.no-style-link {
+  text-decoration: none;
 }
 
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
