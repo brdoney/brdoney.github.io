@@ -47,7 +47,7 @@ header {
   width: 18rem;
 
   font-size: 1.1rem;
-  
+
   color: $accent;
   caret-color: $accent;
 
@@ -108,6 +108,16 @@ header {
     border-bottom: 0.05rem solid #e3e3e3;
     border-radius: 0 0 1rem 1rem;
   }
+
+  .autoComplete_result_chevron {
+    position: relative;
+    top: -0.5rem;
+    font-size: 1.5rem;
+    float: right;
+  }
+  &:hover .autoComplete_result_chevron {
+    color: $accent;
+  }
 }
 .autoComplete_result {
   @extend %autoComplete_result_base;
@@ -123,12 +133,6 @@ header {
     opacity: 0.9;
     border-left: 2px solid $accent;
     border-right: 2px solid $accent;
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-  }
-
-  &:focus {
-    outline: 0;
   }
 }
 .no_result {
@@ -140,6 +144,7 @@ header {
   }
 }
 
+// Applied to each character that matches the current search
 .autoComplete_highlighted {
   opacity: 1;
   color: $accent;
@@ -150,13 +155,17 @@ header {
     background-color: rgba(#fff, 0);
   }
 }
+
+// Applied to the element that matches the current search
 .autoComplete_selected {
   cursor: pointer;
   background-color: rgba(255, 248, 248, 0.9);
   border-left: 2px solid $accent;
   border-right: 2px solid $accent;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
+
+  .autoComplete_result_chevron {
+    color: $accent;
+  }
 }
 
 @media only screen and (max-width: 600px) {

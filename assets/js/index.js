@@ -45,7 +45,7 @@ new autoComplete({
   resultItem: {
     // Rendered result item
     content: (data, source) => {
-      source.innerHTML = data.match;
+      source.innerHTML = `${data.match}<span class="autoComplete_result_chevron">&rsaquo;</span>`;
     },
     element: "li",
   },
