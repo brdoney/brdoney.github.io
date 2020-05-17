@@ -3,8 +3,19 @@ highlighter: rouge
 kramdown:
   input: GFM
 
+# jekyll-seo-tag configuration
+title: Alphabet
+tagline: Learn how to code by learning and doing
+description: >
+  Learn how to code through by creating games and programs alongside short lessons,
+  all while progressing at your own pace. Kickstart your journey into coding now!
+
 exclude:
   - scripts
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 collections:
   docs:

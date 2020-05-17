@@ -34,13 +34,13 @@ title: Home
         </div>
 
         <div class="timeline-content">
-            <a href="{{ doc.url }}" class="no-style-link"><h2>{{ doc.title }}</h2></a>
+            <a href="{{ doc.url | relative_url }}" class="no-style-link"><h2>{{ doc.title }}</h2></a>
             <p>
                 {{ doc.excerpt }}
             </p>
 
             <div class="btn-container">
-                <a href="{{ doc.url }}" class="btn">View {{ doc.type | capitalize }}</a>
+                <a href="{{ doc.url | relative_url }}" class="btn">View {{ doc.type | capitalize }}</a>
             </div>
         </div>
     </div>
