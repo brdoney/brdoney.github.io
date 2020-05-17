@@ -4,7 +4,7 @@ const placeholder = "Search Pages...";
 
 const autoCompleteEl = document.querySelector("#autoComplete");
 
-new autoComplete({
+const ac = new autoComplete({
   data: {
     src: async () => {
       autoCompleteEl.setAttribute("placeholder", "Loading...");
@@ -25,10 +25,10 @@ new autoComplete({
     if (a.match > b.match) return 1;
     return 0;
   },
-  placeHolder: placeholder, 
+  placeHolder: placeholder,
   selector: "#autoComplete",
   threshold: 0, // Min. Chars length to start Engine
-  debounce: 0, // Post duration for engine to start 
+  debounce: 0, // Post duration for engine to start
   searchEngine: "loose", // Search Engine type/mode
   resultsList: {
     // Rendered results list object
@@ -61,8 +61,27 @@ new autoComplete({
     if (feedback.selection != null) {
       const selectionData = feedback.selection.value;
       window.location.href = selectionData.url;
+      autoCompleteEl.value = "";
     }
   },
+});
+
+// Choose the first result on enter, if there is one
+autoCompleteEl.addEventListener("keydown", async (event) => {
+  if (event.key === "Enter") {
+    // Make sure that results have been displayed, if there are any
+    await ac.listMatchedResults(ac.dataStream);
+
+    // Click on (select) the top result, if there is one
+    const resultsChildren = ac.resultsList.view.children;
+    if (resultsChildren.length > 0) {
+      const f = ac.resultsList.view.children[0];
+      const ev = new Event("mousedown");
+      f.dispatchEvent(ev);
+    }
+  } else if (event.key === "Escape") {
+    autoCompleteEl.blur();
+  }
 });
 
 // Toggle event for search input showing & hidding results list onfocus / blur
