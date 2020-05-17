@@ -3,14 +3,16 @@
 @import "variables";
 @import "timeline";
 
+{% assign docs_size = site.documents.size | times: 1.0 %}
+$timeline_height: percentage({{ docs_size | minus: 1.0 | divided_by: docs_size }});
+
 #timeline {
   &:before {
     content: "";
     width: 3px;
     background: $primary;
 
-    {% assign docs_size = site.documents.size | times: 1.0 %}
-    height: percentage({{ docs_size | minus: 1.0 | divided_by: docs_size }});
+    height: $timeline_height - 1%;
 
     left: 50%;
     top: 0;
@@ -24,6 +26,7 @@
     padding: 0px;
     width: 90%;
     &:before {
+      height: $timeline_height - 2%;
       left: 0;
     }
 
