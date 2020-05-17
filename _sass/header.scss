@@ -5,9 +5,7 @@ header {
   height: 80px;
   display: flex;
   align-items: center;
-}
 
-header {
   h1,
   h2 {
     margin: 0;
@@ -27,6 +25,187 @@ header {
     color: $light;
     &:hover {
       filter: brightness(90%);
+    }
+  }
+}
+
+/**
+ * Original file: /npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.css
+ */
+.autoComplete_container {
+  display: block;
+  position: absolute;
+  right: 20px;
+}
+#autoComplete_wrapper {
+  display: relative;
+  display: inline-block;
+}
+#autoComplete {
+  padding: 0 2rem 0 3.5rem;
+  height: 3rem;
+  width: 18rem;
+
+  font-size: 1.1rem;
+  
+  color: $accent;
+  caret-color: $accent;
+
+  outline: 0;
+  border: none;
+  border-radius: 50rem;
+  text-overflow: ellipsis;
+
+  background-image: url(/assets/images/magnifier.svg);
+  background-position: left 1.05rem top 0.7rem;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: 1.7rem;
+
+  // For expansion on mobile devices
+  transition: all 0.3s ease;
+  -webkit-transition: all -webkit-transform 0.3s ease;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.75);
+  }
+  &::selection {
+    color: transparent;
+  }
+  &:focus::selection {
+    color: #fff;
+    background-color: $accent;
+  }
+  &:focus {
+    padding: 0 2rem 0 3.5rem;
+    background-size: 1.5rem;
+    background-position: left 1.05rem top 0.8rem;
+  }
+}
+
+#autoComplete_list {
+  display: none;
+  position: absolute;
+  top: 3rem;
+  width: 18rem + 2rem + 3.5rem;
+  margin-top: 0;
+  padding-inline-start: 0;
+  z-index: 1000;
+}
+
+// Each entry in the #autoComplete_list dropdown
+%autoComplete_result_base {
+  padding: 0.6rem;
+  border: 0.05rem solid #e3e3e3;
+  border-bottom: none;
+  list-style: none;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #7b7b7b;
+  background-color: #fff;
+
+  &:last-child {
+    border-bottom: 0.05rem solid #e3e3e3;
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+.autoComplete_result {
+  @extend %autoComplete_result_base;
+
+  &::selection {
+    color: rgba(#fff, 0);
+    background-color: rgba(#fff, 0);
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.9;
+    border-left: 2px solid $accent;
+    border-right: 2px solid $accent;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+.no_result {
+  @extend %autoComplete_result_base;
+
+  &:hover,
+  &:focus {
+    cursor: default;
+  }
+}
+
+.autoComplete_highlighted {
+  opacity: 1;
+  color: $accent;
+  font-weight: 700;
+
+  &::selection {
+    color: rgba(#fff, 0);
+    background-color: rgba(#fff, 0);
+  }
+}
+.autoComplete_selected {
+  cursor: pointer;
+  background-color: rgba(255, 248, 248, 0.9);
+  border-left: 2px solid $accent;
+  border-right: 2px solid $accent;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+}
+
+@media only screen and (max-width: 600px) {
+  #autoComplete {
+    width: 5rem;
+
+    &:focus {
+      width: 11rem;
+      background-size: 1.6rem;
+      background-position: left 1.1rem top 0.75rem;
+    }
+  }
+  #autoComplete_list {
+    width: 11rem + 2rem + 3.5rem;
+  }
+  .autoComplete_result {
+    &:first-child {
+      border-radius: 1rem 1rem 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 1rem 1rem;
+    }
+    &:only-child {
+      border-radius: 1rem;
+    }
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #autoComplete {
+    border-width: 1px;
+    &:hover,
+    &:focus {
+      border-width: 1px;
+    }
+  }
+}
+@-moz-document url-prefix() {
+  #autoComplete {
+    border-width: 1px;
+    background-size: 1.2rem;
+    background-origin: border-box;
+    background-position: center;
+
+    &:hover,
+    &:focus {
+      border-width: 1px;
+    }
+    &:focus {
+      background-position: left 1.1rem top 0.8rem;
     }
   }
 }

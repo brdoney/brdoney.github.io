@@ -16,14 +16,7 @@
 </head>
 
 <body>
-    <header>
-        <a href="{% link index.html %}" class="no-style-link">
-            <h1>Alphabet</h1>
-        </a>
-        <a href="{% link index.html %}" class="header-link">
-            <h2>Home</h2>
-        </a>
-    </header>
+    {% include header.html %}
 
     <div class="content">
         {%- if page.title -%}
@@ -31,6 +24,9 @@
         {%- endif -%}
         {{ content }}
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <script src="/assets/js/index.js"></script>
 </body>
 
 </html>
