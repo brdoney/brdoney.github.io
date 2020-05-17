@@ -4,7 +4,7 @@
 [
     {% for doc in site.documents %}
     {
-        "title": "{{ doc.title }}",
+        "title": "{{ doc.order }}. {{ doc.title }}",
         "url": "{{ doc.url }}"
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
