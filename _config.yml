@@ -4,7 +4,7 @@ kramdown:
   input: GFM
 
 # jekyll-seo-tag configuration
-title: Alphabet
+title: Code with Brendan
 tagline: Learn how to code by learning and doing
 description: >
   Learn how to code through by creating games and programs alongside short lessons,
