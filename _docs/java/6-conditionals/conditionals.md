@@ -1,14 +1,16 @@
 ---
 title: If Statements
-order: 5
+order: 10
 type: lesson
 ---
 
-Sometimes we want the computer to be able to make decisions on its own. Maybe we want it to...
+Sometimes we want the computer to be able to make decisions on its own.
+
+Maybe we want it to...
 
 - Tell the user to bring an umbrella if it is going to be rainy
 - Print "Goodbye!" when a user inputs "goodbye" with a Scanner
-- Say "Good morning" if it is the morning or "Good night" if it is nighttime
+- Say "Good morning" if it is the morning or "Good night" if it is night time
 
 To do this, we use "if statements". If statements follow the formula
 

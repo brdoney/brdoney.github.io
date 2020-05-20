@@ -2,7 +2,7 @@
     "markdownlint.config": {
         "MD025": false
     },
-    "[liquid]": {
+    "[html]": {
         "editor.snippetSuggestions": "bottom",
     },
     "code-runner.customCommand": "rm -rf _site && bundle exec jekyll serve"

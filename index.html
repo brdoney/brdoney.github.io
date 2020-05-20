@@ -4,7 +4,8 @@ title: Home
 ---
 
 <div id="timeline">
-    {% for doc in site.documents %}
+    {%- assign docs = site.documents | sort: 'order' -%}
+    {% for doc in docs %}
     <div class="timeline-item">
         <div class="timeline-icon">
             {% if doc.type == 'lesson' %}

@@ -1,6 +1,6 @@
 ---
 title: Manipulating Variables
-order: 3
+order: 5
 type: lesson
 ---
 

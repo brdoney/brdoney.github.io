@@ -1,6 +1,6 @@
 {%- if page.collection -%}
 <!-- Assumes that the posts are already ordered by Jekyll -->
-{%- assign posts = site[page.collection] -%}
+{%- assign posts = site[page.collection] | sort: "order" -%}
 
 {%- for item in posts -%}
 {%- if item.title == page.title -%}

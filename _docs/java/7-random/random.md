@@ -1,6 +1,6 @@
 ---
 title: Random Numbers
-order: 6
+order: 12
 type: lesson
 ---
 

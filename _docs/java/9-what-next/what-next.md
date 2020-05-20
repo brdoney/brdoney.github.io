@@ -1,6 +1,6 @@
 ---
 title: Next Steps
-order: 8
+order: 16
 type: lesson
 ---
 

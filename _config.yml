@@ -17,6 +17,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# sort_by is only supported with 4.0+, which GitHub Pages isn't using yet
 collections:
   docs:
     output: true

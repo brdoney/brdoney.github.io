@@ -1,10 +1,12 @@
 ---
 title: While Loops
-order: 7
+order: 14
 type: lesson
 ---
 
-A lot of the time, we also want the computer to do the same actions over and over again. Maybe we're...
+A lot of the time, we also want the computer to do the same actions over and over again.
+
+Maybe we're...
 
 - Printing out a message for the user repeatedly
 - Playing a game over and over again
