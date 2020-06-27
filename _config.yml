@@ -12,6 +12,7 @@ description: >
 
 exclude:
   - scripts
+  - .vscode
 
 plugins:
   - jekyll-sitemap
