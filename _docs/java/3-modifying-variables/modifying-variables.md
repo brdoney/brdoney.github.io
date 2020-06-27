@@ -1,6 +1,6 @@
 ---
 title: Manipulating Variables
-order: 5
+order: 6
 type: lesson
 ---
 
@@ -23,3 +23,20 @@ int myVar = 1;
 | `--`   | `myVar--;`   | Subtract 1 from the current value of myVar |
 | `*=`   | `myVar*=4;`  | Multiply the current value of myVar by two |
 | `/=`   | `myVar/= 7;` | Divide the current value of myVar by 7     |
+
+So a full program where we modify a variable after creating it might look something like this:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int a = 1;
+        System.out.println(a);
+        a = 2;
+        System.out.println(a);
+        a++;
+        System.out.println(a);
+    }
+}
+```
+
+Which would first print out `1`, then `2`, then `3`.

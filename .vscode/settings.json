@@ -5,5 +5,8 @@
     "[html]": {
         "editor.snippetSuggestions": "bottom",
     },
-    "code-runner.customCommand": "rm -rf _site && bundle exec jekyll serve"
+    "code-runner.customCommand": "rm -rf _site && bundle exec jekyll serve",
+    "cSpell.ignoreWords": [
+        "rawtext", "println"
+    ]
 }

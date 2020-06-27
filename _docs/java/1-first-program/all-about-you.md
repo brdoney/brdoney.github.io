@@ -1,6 +1,6 @@
 ---
 title: All About You!
-order: 2
+order: 3
 type: exercise
 ---
 

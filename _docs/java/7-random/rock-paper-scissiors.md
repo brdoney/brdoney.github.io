@@ -1,6 +1,6 @@
 ---
 title: Rock, Paper, Scissors!
-order: 13
+order: 14
 type: exercise
 ---
 

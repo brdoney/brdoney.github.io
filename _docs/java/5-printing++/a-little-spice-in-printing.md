@@ -1,6 +1,6 @@
 ---
 title: A Little Spice in Printing
-order: 8
+order: 9
 type: lesson
 ---
 

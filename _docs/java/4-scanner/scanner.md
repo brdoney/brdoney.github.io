@@ -1,6 +1,6 @@
 ---
 title: User Input
-order: 6
+order: 7
 type: lesson
 ---
 

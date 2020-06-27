@@ -1,6 +1,6 @@
 ---
 title: Making the Calculator Interactive
-order: 7
+order: 8
 type: exercise
 ---
 
