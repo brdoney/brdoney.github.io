@@ -38,7 +38,7 @@ public class Main {
     int myNumber = 6;
     System.out.println("My favorite number is " + myNumber);
     System.out.println("Is your favorite number " + myNumber + "?");
-    String favoriteNumString = "I can say that my favourite number is " + myNumber + "in variables too!";
+    String favoriteNumString = "I can say that my favorite number is " + myNumber + "in variables too!";
   }
 }
 ```

@@ -20,7 +20,7 @@ const ac = new autoComplete({
     cache: true,
   },
   sort: (a, b) => {
-    // Sort rendered results ascendingly
+    // Sort rendered results in ascending order
     if (a.match < b.match) return -1;
     if (a.match > b.match) return 1;
     return 0;
@@ -84,7 +84,7 @@ autoCompleteEl.addEventListener("keydown", async (event) => {
   }
 });
 
-// Toggle event for search input showing & hidding results list onfocus / blur
+// Toggle event for search input showing & hiding results list onfocus / blur
 const resultsList = document.querySelector("#autoComplete_list");
 autoCompleteEl.addEventListener("focus", () => {
   resultsList.style.display = "block";

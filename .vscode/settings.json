@@ -7,6 +7,10 @@
     },
     "code-runner.customCommand": "rm -rf _site && bundle exec jekyll serve",
     "cSpell.ignoreWords": [
-        "rawtext", "println"
+        "codecademy",
+        "javatpoint",
+        "println",
+        "rawtext",
+        "udemy"
     ]
 }
