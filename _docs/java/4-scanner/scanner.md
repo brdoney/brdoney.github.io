@@ -25,8 +25,6 @@ In the following table, `varName` should be replaced with the name of your Scann
 ## Example Code
 
 ```java
-package com.company;
-
 import java.util.Scanner;
 
 public class Test {

@@ -92,3 +92,18 @@ autoCompleteEl.addEventListener("focus", () => {
 autoCompleteEl.addEventListener("blur", () => {
   resultsList.style.display = "none";
 });
+
+window.onload = () => {
+  var config = {
+    // Font sizes currently don't work for Flowchart diagrams
+    actorFontSize: 16,
+    noteFontSize: 16,
+    messageFontSize: 18,
+    theme: "neutral",
+  };
+  mermaid.initialize(config);
+  window.mermaid.init(
+    undefined,
+    document.querySelectorAll(".language-mermaid")
+  );
+};

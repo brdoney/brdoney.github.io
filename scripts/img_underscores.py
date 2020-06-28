@@ -4,7 +4,7 @@ import os
 
 needs_renaming = []
 
-for root, _dirs, files in os.walk("./assets/img/"):
+for root, _dirs, files in os.walk("./assets/images/"):
     for name in files:
         if " " in name or not name == name.lower():
             needs_renaming.append((root, name))
