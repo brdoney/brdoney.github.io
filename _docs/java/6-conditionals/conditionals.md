@@ -1,6 +1,6 @@
 ---
 title: If Statements
-order: 11
+order: 10
 type: lesson
 ---
 

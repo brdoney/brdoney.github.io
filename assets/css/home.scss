@@ -26,7 +26,6 @@ $timeline_height: percentage({{ docs_size | minus: 1.0 | divided_by: docs_size }
     padding: 0px;
     width: 90%;
     &:before {
-      height: $timeline_height - 2%;
       left: 0;
     }
 

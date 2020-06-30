@@ -1,6 +1,6 @@
 ---
 title: Choose Your Own Adventure Game
-order: 10
+order: 12
 type: exercise
 ---
 
