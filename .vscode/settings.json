@@ -6,6 +6,10 @@
         "editor.snippetSuggestions": "bottom",
     },
     "code-runner.customCommand": "rm -rf _site && bundle exec jekyll serve",
+    "cSpell.enabledLanguageIds": [
+        "html",
+        "markdown",
+    ],
     "cSpell.ignoreWords": [
         "codecademy",
         "javatpoint",
@@ -13,5 +17,6 @@
         "rawtext",
         "sooo",
         "udemy"
-    ]
+    ],
+    "python.analysis.typeCheckingMode": "strict"
 }
