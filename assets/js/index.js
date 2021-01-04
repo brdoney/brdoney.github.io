@@ -66,20 +66,10 @@ const ac = new autoComplete({
   },
 });
 
-// Choose the first result on enter, if there is one
+// Unfocus when the escape button is pressed
+// TODO: Select top element if no element is currently selected
 autoCompleteEl.addEventListener("keydown", async (event) => {
-  if (event.key === "Enter") {
-    // Make sure that results have been displayed, if there are any
-    await ac.listMatchedResults(ac.dataStream);
-
-    // Click on (select) the top result, if there is one
-    const resultsChildren = ac.resultsList.view.children;
-    if (resultsChildren.length > 0) {
-      const f = ac.resultsList.view.children[0];
-      const ev = new Event("mousedown");
-      f.dispatchEvent(ev);
-    }
-  } else if (event.key === "Escape") {
+  if (event.key === "Escape") {
     autoCompleteEl.blur();
   }
 });

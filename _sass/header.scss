@@ -133,9 +133,10 @@ header {
   &:hover,
   &:focus {
     cursor: pointer;
-    opacity: 0.9;
-    border-left: 2px solid $accent;
-    border-right: 2px solid $accent;
+    box-shadow: 0 0 3pt 2pt $accent;
+    // Strangely, this makes box shadow appear on every edge,
+    // despite there being no bottom margin to draw the shadow into there
+    opacity: 0.95;
   }
 }
 .no_result {
@@ -198,9 +199,15 @@ header {
 }
 
 @media only screen and (max-width: 450px) {
+  // Center the search icon in the text box and hide everything else until expanded (focused)
   #autoComplete {
     background-position: center;
     width: 1rem;
+
+    &:not(:focus) {
+      color: #fff; // Fallback for older browsers
+      color: rgba(#fff, 0);
+    }
 
     &::placeholder {
       opacity: 0;
@@ -218,22 +225,6 @@ header {
     &:hover,
     &:focus {
       border-width: 1px;
-    }
-  }
-}
-@-moz-document url-prefix() {
-  #autoComplete {
-    border-width: 1px;
-    background-size: 1.2rem;
-    background-origin: border-box;
-    background-position: center;
-
-    &:hover,
-    &:focus {
-      border-width: 1px;
-    }
-    &:focus {
-      background-position: left 1.1rem top 0.8rem;
     }
   }
 }
